@@ -1,4 +1,4 @@
-# Верстка простой страницы
+# Your motivation page
 
 ![Alt text](source/css_template.psd.png?raw=true "travel_page")
 
