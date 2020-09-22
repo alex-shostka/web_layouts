@@ -9,6 +9,6 @@
 <img align="left" alt="CSS3" width="26px" src="https://simpleicons.org/icons/css3.svg" />
 
 <img src="https://www.flaticon.com/free-icon/sass_919831?term=Sass&page=1&position=1" />
-<img src="https://www.flaticon.com/free-icon/sass_919831?term=Sass&page=1&position=1" />
+<img align="left" alt="SASS" width="36px" src="https://www.flaticon.com/free-icon/sass_919831?term=Sass&page=1&position=1" />
 
 
