@@ -8,6 +8,6 @@
 <img align="left" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
 <img align="left" alt="CSS3" width="26px" src="https://simpleicons.org/icons/css3.svg" />
 
-<img align="left" alt="CSS3" width="26px" src="https://www.flaticon.com/free-icon/sass_919831?term=Sass&page=1&position=1" />
+<img align="left" alt="Sass" width="26px" src="https://www.flaticon.com/free-icon/sass_919831?term=Sass&page=1&position=1" />
 
 
