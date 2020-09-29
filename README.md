@@ -4,15 +4,11 @@
 Here is my psd2thml pages. These pages were created as a real freelance order, for education or just fo fun. I explore new technologies and use it in my projects.
 
 ### Qualifications:
-
-Proficiency with HTML, CSS, JavaScript and JQuery, Sass.
-Possess knowledge with responsive and adaptive design.
-Hands on experience building web pages from psd, figma.
-
-
-### Author ✍️
-Alex Shostka [@alex-shostka](https://github.com/alex-shostka)
-
+- Proficiency with HTML, CSS, JavaScript and JQuery, Sass.
+- Possess knowledge with responsive and adaptive design.
+- Hands on experience building web pages from psd, figma.
+<br />
+<br />
 
 ### Languages and Tools:
 
