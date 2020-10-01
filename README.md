@@ -1,4 +1,4 @@
-## HTML\CSS web pages
+## HTML\CSS websites layouts
 Верстка страниц из свободных источников, а так же на заказ. Здесь я изучаю, применяю на практике новые технологии и выкладываю работы для ознакомления.
 
 Here is my psd2thml pages. These pages were created as a real freelance order, for education or just fo fun. I explore new technologies and use it in my projects.
