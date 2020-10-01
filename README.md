@@ -3,7 +3,10 @@
 
 Here is my psd2thml pages. These pages were created as a real freelance order, for education or just fo fun. I explore new technologies and use it in my projects.
 
-### Qualifications:
+## Motivation 🤔
+Here I am testing new tools, new technologies and better solutions to everyday problems. My goal is to make the process of creating web pages the most automated. Set up a work project to work comfortably and find a flexible solution to your layout problems.
+
+## Qualifications:
 - Proficiency with HTML, CSS, JavaScript and JQuery, Sass.
 - Possess knowledge with responsive and adaptive design.
 - Hands on experience building web pages from psd, figma.
