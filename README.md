@@ -20,8 +20,9 @@ Here I am testing new tools, new technologies and better solutions to everyday p
 <img align="left" src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
 
 
-## Preview pages
+## Зreview
 <details> 
-  <summary>Click for preview</summary>
+  <summary>Click to preview pages</summary>
     Hi there!
+    The previews will be here soon!
 </details> 
