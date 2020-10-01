@@ -1,7 +1,6 @@
 ## HTML\CSS websites layouts
-Верстка страниц из свободных источников, а так же на заказ. Здесь я изучаю, применяю на практике новые технологии и выкладываю работы для ознакомления.
 
-Here is my psd2thml pages. These pages were created as a real freelance order, for education or just fo fun. I explore new technologies and use it in my projects.
+Simple and complex websites layouts. psd2html.
 
 ## Motivation 🤔
 Here I am testing new tools, new technologies and better solutions to everyday problems. My goal is to make the process of creating web pages the most automated. Set up a work project to work comfortably and find a flexible solution to your layout problems.
@@ -22,6 +21,7 @@ Here I am testing new tools, new technologies and better solutions to everyday p
 
 
 ## Preview pages
-
-<summary>Click for preview</summary>
-  Hi there!
+<details> 
+  <summary>Click for preview</summary>
+    Hi there!
+</details> 
