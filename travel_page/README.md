@@ -1,4 +1,5 @@
-# Your motivation page
+# Motivation page
+Simple page without any modern features.
 
 ![Alt text](source/css_template.psd.png?raw=true "travel_page")
 
