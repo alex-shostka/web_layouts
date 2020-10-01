@@ -1,4 +1,7 @@
-# Your motivation page
+# YEBO Bicycle store
+
+Perfect guys with perferct bikes.
+Responsive and adaptive design page and version for mobile devices with burger menu and media queries 
 
 ![Alt text](source/YEBO_Bicycle_Theme.png?raw=true "travel_page")
 
