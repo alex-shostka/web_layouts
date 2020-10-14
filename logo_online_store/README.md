@@ -16,3 +16,4 @@ There is a first part of a big online store.
 <img align="left" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 <img align="left" src="https://img.shields.io/badge/git%20-%23F05033.svg?&style=for-the-badge&logo=git&logoColor=white"/>
 <img align="left" src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
+<img align="left" src="https://img.shields.io/badge/gulp%20-%23FF0000.svg?&style=for-the-badge&logo=gulp&logoColor=white"/>
