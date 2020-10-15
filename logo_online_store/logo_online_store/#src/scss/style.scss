@@ -58,6 +58,8 @@ body {
   }
 
   &__side {
+    position: relative;
+    z-index: 3;
     flex: 0 0 260px;
   }
 
@@ -66,9 +68,17 @@ body {
 
   &__content {
     flex: 1 1 auto;
+    min-width: 0;
     padding: 0px 0px 0px 30px;
   }
   &__search {
+    position: relative;
+    z-index: 2;
+    margin: 0px 0px 22px 0px;
+  }
+
+  &__slider {
+    margin: 0px 0px 65px 0px;
   }
 }
 .menu-page {
@@ -161,6 +171,9 @@ body {
       }
     }
     &._active {
+      .menu-page__submenu {
+        pointer-events: all;
+      }
       .submenu-page__item {
         z-index: 2;
         transform: translate(0px, 0px);
@@ -193,6 +206,7 @@ body {
     left: 100%;
     height: 100%;
     overflow: hidden;
+    pointer-events: none;
   }
 }
 .submenu-page {
