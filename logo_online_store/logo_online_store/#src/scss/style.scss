@@ -52,28 +52,38 @@ body {
 
 .page {
   flex: 1 1 auto;
+  @media (max-width: 640px) {
+    // padding: 85px 0px 0px 0px;
+  }
 
   &__container {
-    display: flex;
+    @media (min-width: $md2+px) {
+      display: flex;
+    }
   }
 
   &__side {
     position: relative;
-    z-index: 3;
+    z-index: 10;
     flex: 0 0 260px;
+    @media (max-width: $md2+px) {
+      margin: 0px 9px 30px 0px;
+    }
   }
 
   &__menu {
   }
 
   &__content {
-    flex: 1 1 auto;
-    min-width: 0;
-    padding: 0px 0px 0px 30px;
+    @media (min-width: $md2+px) {
+      flex: 1 1 auto;
+      min-width: 0;
+      padding: 0px 0px 0px 30px;
+    }
   }
   &__search {
     position: relative;
-    z-index: 2;
+    z-index: 5;
     margin: 0px 0px 22px 0px;
   }
 
@@ -82,7 +92,7 @@ body {
   }
 }
 .menu-page {
-  background: url("../img/bg_menu.jpg") top no-repeat;
+  background: url("../img/bg_menu.jpg") top repeat;
   position: relative;
   &__header {
     padding: 20px;
@@ -91,6 +101,7 @@ body {
   }
 
   &__title {
+    flex: 1 1 auto;
     color: #ffffff;
     font-family: "UniSansHeavy";
     line-height: 35 / 30 * 100%;
@@ -161,6 +172,7 @@ body {
     .menu-page__link {
       &::after {
         content: "";
+        transition: all 0.3s ease 0s;
         position: absolute;
         right: 10px;
         top: 50%;
@@ -168,6 +180,9 @@ body {
         height: 14px;
         transform: translate(0px, -50%);
         background-image: url("../img/menu_arrow.png");
+        @media (max-width: $md2+px) {
+          transform: translate(0px, -50%) rotate(90deg);
+        }
       }
     }
     &._active {
@@ -175,11 +190,19 @@ body {
         pointer-events: all;
       }
       .submenu-page__item {
-        z-index: 2;
-        transform: translate(0px, 0px);
+        display: block;
+        @media (min-width: $md2+px) {
+          z-index: 2;
+          transform: translate(0px, 0px);
+        }
       }
       .menu-page__link {
         background-color: #098494;
+        @media (max-width: $md2+px) {
+          &::after {
+            transform: translate(0px, -50%) rotate(-90deg);
+          }
+        }
       }
     }
   }
@@ -197,31 +220,47 @@ body {
         background-color: #098494;
       }
     }
+    @media (max-width: $md2+px) {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
   }
 
   &__submenu {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none;
+    @media (min-width: $md2+px) {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    
   }
 }
 .submenu-page {
 
+  @media (max-width: $md2+px) {
+    background-color: #fff;
+  }
+
   &__item {
-    width: 280px;
-    border: 2px solid #098494;
-    background-color: #ffffff;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0%;
-    transform: translate(-100%, 0px);
-    transition: all 0.3s ease 0s;
+    display: none;
+    @media (min-width: $md2+px) {
+      display: block;
+      width: 280px;
+      border: 2px solid #098494;
+      background-color: #ffffff;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0%;
+      transform: translate(-100%, 0px);
+      transition: all 0.3s ease 0s;
+    }
+    
   }
 
   &__menu {
@@ -244,10 +283,17 @@ body {
         color: #fff;
       }
     }
+    @media (max-width: $md2+px) {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
   }
 
   &__product {
     padding: 0 15px;
+    @media (max-width: $md2+px) {
+      display: none;
+    }
   }
 }
 .item-product {
@@ -286,10 +332,9 @@ body {
     }
   }
 
-	&__body {
+  &__body {
     padding: 0px 10px;
-	}
-
+  }
 
   &__title {
     color: #36949f;
@@ -350,49 +395,52 @@ body {
     align-items: center;
     padding: 0px 14px;
     background-color: #f3f3f3;
+    @media (max-width: $md3+px) {
+      display: none;
+    }
   }
 
   &__title {
-      color: #666666;
-      font-weight: 300;
-      display: flex;
-      align-items: center;
+    color: #666666;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    span {
+      border-bottom: 1px dashed;
+      margin: 0px 13px;
+      &:last-child {
+        display: none;
+      }
+    }
+    &::before {
+      content: "";
+      width: 17px;
+      height: 17px;
+      background: url("../img/icons/search_page.png") 0 0 no-repeat;
+    }
+
+    &::after {
+      content: "";
+      transition: all 0.3s ease 0s;
+      width: 10px;
+      height: 10px;
+      background: url("../img/icons/search_page_arrows.png") 0 0 no-repeat;
+    }
+
+    &._categories {
       span {
-        border-bottom: 1px dashed;
-        margin: 0px 13px;
+        display: none;
         &:last-child {
-          display: none;
+          display: block;
         }
       }
-      &::before {
-        content: "";
-        width: 17px;
-        height: 17px;
-        background: url("../img/icons/search_page.png") 0 0 no-repeat;
-      }
-      
+    }
+
+    &._active {
       &::after {
-        content: "";
-        transition: all 0.3s ease 0s;
-        width: 10px;
-        height: 10px;
-        background: url("../img/icons/search_page_arrows.png") 0 0 no-repeat;
+        transform: rotate(-180deg);
       }
-
-      &._categories {
-        span {
-          display: none;
-          &:last-child {
-            display: block;
-          }
-        }
-      }
-
-      &._active {
-        &::after {
-          transform: rotate(-180deg);
-        }
-      }
+    }
   }
 
   &__categories {
@@ -403,8 +451,7 @@ body {
   }
 
   &__input {
-    border-top: 2px solid #f2f2f2;
-    border-bottom: 2px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
     flex: 1 1 auto;
     .input {
       height: 100%;
@@ -429,9 +476,13 @@ body {
   }
 
   &__row {
-    display: flex;
+    @media (min-width: 992px) {
+      display: flex;
+    }
+    @media (max-width: $md2+px) {
+      padding: 20px 0px;
+    }
   }
-
 
   &__column {
     flex: 0 1 33.333%;
@@ -439,6 +490,16 @@ body {
     padding: 27px 40px;
     &:last-child {
       border: 0;
+    }
+    @media (max-width: $md1+px) {
+      padding: 27px 20px;
+    }
+    @media (max-width: $md2+px) {
+      padding: 0px 20px;
+      margin: 0px 0px 20px 0px;
+      &:last-child {
+        margin: 0px 0px 0px 0px;
+      }
     }
   }
 

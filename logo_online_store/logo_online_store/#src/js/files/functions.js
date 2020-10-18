@@ -12,7 +12,7 @@ if (isIE()) {
 if (isMobile.any()) {
 	document.querySelector('body').classList.add('_touch');
 }
-/*
+
 function testWebP(callback) {
 	var webP = new Image();
 	webP.onload = webP.onerror = function () {
@@ -27,7 +27,7 @@ testWebP(function (support) {
 		document.querySelector('body').classList.add('_no-webp');
 	}
 });
-*/
+
 function ibg() {
 	if (isIE()) {
 		let ibg = document.querySelectorAll("._ibg");

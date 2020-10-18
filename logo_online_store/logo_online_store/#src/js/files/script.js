@@ -7,14 +7,28 @@ let checkboxCategories = document.querySelectorAll(
   ".categories-search__checkbox"
 );
 
-for (let index = 0; index < menuParents.length; index++) {
-  const menuParent = menuParents[index];
-  menuParent.addEventListener("mouseenter", function (e) {
-    menuParent.classList.add("_active");
-  });
-  menuParent.addEventListener("mouseleave", function (e) {
-    menuParent.classList.remove("_active");
-  });
+if (isMobile.any()) {
+  // TODO: сюда даже не заходит - узнать, в чем проблема
+  let menuParents = document.querySelectorAll(".menu-page__parent>a");
+  for (let index = 0; index < menuParents.length; index++) {
+    const menuParent = menuParents[index];
+    menuParent.addEventListener('click', function(e) {
+      e.preventDefault();
+      menuParent.parentElement.classList.toggle("_active");
+    });
+  }
+} else {
+  let menuParents = document.querySelectorAll(".menu-page__parent");
+  console.log('from not mobile');
+  for (let index = 0; index < menuParents.length; index++) {
+    const menuParent = menuParents[index];
+    menuParent.addEventListener("mouseenter", function (e) {
+      menuParent.classList.add("_active");
+    });
+    menuParent.addEventListener("mouseleave", function (e) {
+      menuParent.classList.remove("_active");
+    });
+  }
 }
 
 menuPageBurger.addEventListener("click", function (e) {
