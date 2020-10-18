@@ -4,8 +4,7 @@ Online store with different goods and stuff. Responsive design with "burger menu
 ## Notion
 There is a first part of a big online store.
 
-![Alt text](source/logo_images/logo.gif?raw=true "logo_online_store")
-![Alt text](source/logo_images/7gNT1WlzD7.gif?raw=true "logo_online_store")
+![Alt text](source/logo_images/first_revI.gif?raw=true "logo_online_store")
 
 
 ### Languages and Tools:
